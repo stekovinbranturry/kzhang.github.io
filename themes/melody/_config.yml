@@ -2,16 +2,16 @@
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 # ---------------
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00C4B6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00C4B6"
-#   link_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   tag_start_color: "#A4D8FA"
-#   tag_end_color: "#1B9EF3"
+theme_color:
+  enable: true
+  main: "#90a4ae"
+  paginator: "#607d8b"
+  button_hover: "#FF7242"
+  text_selection: "#00C4B6"
+  link_color: "#858585"
+  hr_color: "#607d8b"
+  tag_start_color: "#A4D8FA"
+  tag_end_color: "#1B9EF3"
 
 # Main menu navigation
 menu:
@@ -23,7 +23,7 @@ menu:
 
 # Favicon
 # ---------------
-favicon: /melody-favicon.ico
+favicon: /zk.ico
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -41,7 +41,7 @@ pwa:
 
 # Highlight theme
 # ---------------
-highlight_theme: default
+highlight_theme: light
 
 # code_word_wrap: true or false
 
@@ -49,9 +49,8 @@ highlight_theme: default
 # see the icon_name in fontawesome website.
 # And you need to add the `fa` or `fab` prefix by your self.
 # ---------------
-#social:
-#icon_name fa: url
-#icon_name fab: url
+social:
+  github fa: https://github.com/stekovinbranturry/
 
 # Algolia search
 # ---------------
@@ -124,9 +123,9 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar:
+avatar: 
 
-top_img: true # false or url of img
+top_img: false # false or url of img
 
 post_meta:
   date_type: created # created or updated
@@ -227,7 +226,7 @@ disqus:
 
 # Footer Settings
 # ---------------
-since: 2013
+since: 2019
 
 # footer_custom_text:
 
