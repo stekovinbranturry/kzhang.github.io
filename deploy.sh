@@ -1,0 +1,1 @@
+sudo scp -r public/* root@47.240.25.216:~/../app/www/blog.kzhang.site
