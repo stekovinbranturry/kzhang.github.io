@@ -43,7 +43,7 @@ algolia_search:
   hits_stats: "${hits} results found in ${time} ms"
 
 local_search:
-  label: Local search
+  label: Local Search
   input_placeholder: Search for Posts
   hits_empty: "We didn't find any results for the search: ${query}"
   powered_by: Powered by

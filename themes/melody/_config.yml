@@ -4,12 +4,12 @@
 # ---------------
 theme_color:
   enable: true
-  main: "#90a4ae"
-  paginator: "#607d8b"
+  main: "#39adb5"
+  paginator: "#39adb5"
   button_hover: "#FF7242"
   text_selection: "#00C4B6"
   link_color: "#858585"
-  hr_color: "#607d8b"
+  hr_color: "#39adb5"
   tag_start_color: "#A4D8FA"
   tag_end_color: "#1B9EF3"
 
@@ -63,7 +63,10 @@ algolia_search:
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/third-party-support?id=local-search
 # ---------------
 local_search:
-  enable: false
+  enable: ture
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
 
 # MathJax
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/third-party-support?id=mathjax
@@ -166,10 +169,13 @@ slide:
   parallaxBackgroundHorizontal: null
   parallaxBackgroundVertical: null
 
-# QR_code:
-# - itemlist:
-#     img:
-#     text:
+QR_code:
+  - itemlist:
+      img: /img/alipay.png
+      text: 支付宝打赏
+  - itemlist:
+      img: /img/wechatpay.png
+      text: 微信打赏
 
 # adv:
 # enable: false
@@ -253,21 +259,21 @@ busuanzi:
 
 # Sidebar Settings
 # ---------------
-#links_title: Links
-#links:
-#Name: url
+links_title: Links
+links:
+  My Personal Website: http://www.kzhang.site
 
 # Follow Me Button
-# follow:
-#   enable: true
-#   url: ''
-#   text: ''
+follow:
+  enable: true
+  url: 'https://github.com/stekovinbranturry/'
+  text: 'Follow Me On Github'
 
 # Ads
 # ---------------
 # Google Adsense
 google_adsense:
-  enable: false
+  enable: true
   js: //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client: ca-pub-...........
   enable_page_level_ads: true
