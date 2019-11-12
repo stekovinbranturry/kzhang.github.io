@@ -9,7 +9,7 @@ categories:
 
 > 最近在组内搞 Git 的规范，之前 CTO 在 engineering doc 里面有提到一篇如何写 commit message 的文章，把它翻译出来，供大家学习参考。原文详见于 https://chris.beams.io/posts/git-commit/
 
-![](./img/git-commit.png)
+![](/img/git-commit.png)
 
 # 介绍：为什么好的 commit messages 很重要
 
@@ -52,7 +52,7 @@ Git diff 可以告诉你哪里发生了变更，但只有 commit message 会让�
 
 > 重新建立起一段代码更改的上下文是非常头痛的。我们很难去完全避免它，但是可以尽可能的减少这类情况的发生，好的 commit 习惯可以帮助我们做到。并且，commit message 可以反映出来一个开发者是不是一个好的团队合作者
 
-![WTF](./img/wtfm.png)
+![WTF](/img/wtfm.png)
 
 如果你从来没怎么想过关于 commit 好坏的问题，一定是你从来没用过`git log` 或者别的比如第三方 GUI 工具查看 log。
 
@@ -216,7 +216,7 @@ Walter Gibbs (1):
 > 小贴士：如果你很难去总结这次 commit，肯定是你一次 commit 了太多东西，难以总结。移步[这里](https://www.freshconsulting.com/atomic-commits/)学习一下吧~
 
 Github 在你 commit 标题超过 50 个字符的时候会发出警告。如果超过 72 个字符，就会省略后面的。
-![](./img/git-commit-50-limit.png)
+![](/img/git-commit-50-limit.png)
 
 所以 72 个字符是硬性限制，但我们尽量做到少于 50 字符。
 

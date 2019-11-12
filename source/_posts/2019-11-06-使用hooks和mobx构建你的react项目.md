@@ -214,8 +214,8 @@ export default App;
 
 ### 7. 项目结构和效果
 
-![项目结构](./img/hooks-mobx-demo.png)
-![效果](./img/todo-app.png)
+![项目结构](/img/hooks-mobx-demo.png)
+![效果](/img/todo-app.png)
 
 你也可以在我的[Github](https://github.com/stekovinbranturry/react-todo-app/tree/master/react-hooks-with-mobx) 中找到这个 demo 的代码
 
