@@ -72,7 +72,7 @@ Git commit 规范也一样，一个项目组里，commit 规范必须要统一�
 
 包括标记语法（Markdown），宽度限制（比如 80 个字母换行），语法，首字母大写，标点符号等。把这些点都明确出来，并尽可能的简化，避免过于复杂。最后一个漂亮风格一致的 log 就此诞生 🥳。这样的 log 大家不仅乐于去看，而且确实会把阅读 log 当成一种习惯。
 
-### 内容
+### 正文
 
 Commit message 里面什么信息应该出现，什么不应该出现。
 
@@ -94,13 +94,13 @@ How should issue tracking IDs, pull request numbers, etc. be referenced? （这�
 
 ---
 
-1. 标题与内容用空行隔开
+1. 标题与正文用空行隔开
 1. 标题不超过 50 个字母
 1. 标题行行首字母大写
 1. 不要以标点符号结束标题行
 1. 标题行要用势在必行的语气
-1. 内容部分 72 个字符换行
-1. 使用内容部分来解释
+1. 正文部分 72 个字符换行
+1. 使用正文部分来解释
 
 举个 🌰
 
@@ -134,11 +134,16 @@ Resolves: #123
 See also: #456, #789
 ```
 
-## 1. 标题与内容用空行隔开
+## 1. 标题与正文用空行隔开
 
 引用`git commit` [手册](https://www.kernel.org/pub/software/scm/git/docs/git-commit.html#_discussion):
 
 > 虽然不是硬性要求，但是这是个好主意：50 个字母总结，空出一行，然后详细描述。第一行被看作是标题，这个在 Git 里有应用场景,比如 Git-format-patch 把 commit 转换成邮件，第一行就会被当做邮件标题，空行下面的描述部分就是邮件主体。
+
+> 译者注：这种方式有个显而易见的好处是，当你的 merge request 只有一个 commit 的时候，commit message 中的标题和正文会被自动解析为 merge request 的标题和描述
+> 例子：
+> ![我的commit](/img/git-commit-rule-1-1.png)
+> ![我的merge request](/img/git-commit-rule-1.png)
 
 当然了，不可能每次 commit 都要求你写这么多，有的简单的写一行即可，比如：
 
@@ -286,11 +291,11 @@ Merge pull request #123 from someuser/somebranch
 
 > 小贴士：在标题里可以简单粗暴些，在下面解释体里语气可以缓和一些。
 
-## 6. 内容部分 72 个字符换行
+## 6. 正文部分 72 个字符换行
 
 Git 不会自动帮你换行，建议每 72 个字符就自己手动换行一下。可以借助一些编辑器，这里就不解释了。
 
-## 7. 使用内容部分来解释
+## 7. 使用正文部分来解释
 
 这儿有个不错的[例子](https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6)
 
@@ -330,7 +335,7 @@ Git 子命令非常多，命令行本身非常强大。当然 IDE 里集成的 G
 
 记得当你使用命令行的时候,不管是 Bash 还是 Zsh 还是 Powershell, 都有 Tab 键自动补全的功能，记得去使用他们。
 
-译者注：Git 命令行非常强大，强大的同时命令又过于繁杂，学习成本比较高。Windows 和 Mac 下都有很多强大的第三方 Git GUI 软件，比如 Sourcetree 等，可以为我们节省不少学习时间。但是如果在服务器上操作 Git，或者 Linus 发行版又没有好的第三方软件，那就只能依赖命令行了。总之学会 Git 命令行绝对是一件非常酷炫的事儿（只会 fetch, pull, checkout, branch 等基本命令的路过 🥵 ）。
+> 译者注：Git 命令行非常强大，强大的同时命令又过于繁杂，学习成本比较高。Windows 和 Mac 下都有很多强大的第三方 Git GUI 软件，比如 Sourcetree 等，可以为我们节省不少学习时间。但是如果在服务器上操作 Git，或者 Linus 发行版又没有好的第三方软件，那就只能依赖命令行了。总之学会 Git 命令行绝对是一件非常酷炫的事儿（只会 fetch, pull, checkout, branch 等基本命令的路过 🥵 ）。
 
 ## 阅读 Pro Git
 
