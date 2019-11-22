@@ -18,6 +18,8 @@ categories:
 
 Hook 发布也有一定时间了，相信大家对它都不会很陌生。如果不是很清楚的话，可以阅读[官网](https://zh-hans.reactjs.org/docs/hooks-intro.html)文档，写的很清晰明了, 也可以参考一下我朋友写的一篇 blog [react-hooks](https://songqiuxiao.github.io/2019/10/25/react-hooks/#more), 在此不过多介绍。
 
+<!-- more -->
+
 ## 什么是 mobx
 
 > 一个比 Redux 简单的多的状态管理工具，无需配置繁琐的 reducer 和 action，功能强大，编码时间减半，快乐加倍。灵感来自 excel 表格中的反应式编程原理，在使用过程中你会对此有深刻的感受。
@@ -73,8 +75,8 @@ Hook 发布也有一定时间了，相信大家对它都不会很陌生。如果
 ### 3. 编写 store
 
 ```js
-import { observable, action, computed } from 'mobx';  // mobx的几个核心api
-import { createContext } from 'react'; 
+import { observable, action, computed } from 'mobx'; // mobx的几个核心api
+import { createContext } from 'react';
 import uuid from 'uuid/v4'; // 用来生成随机数作为ID
 
 class Store {

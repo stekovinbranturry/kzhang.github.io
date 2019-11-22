@@ -15,6 +15,8 @@ categories:
 
 如果你随便打开一个 Git 仓库的 commit log，你会发现他们都会有程度不一的混乱。看下我前段时间提交到[Spring 项目的 💩💩💩](https://github.com/spring-projects/spring-framework/commits/e5f4b49?author=cbeams)。
 
+<!-- more -->
+
 ```BASH
 $ git log --oneline -5 --author cbeams --before "Fri Mar 26 2009"
 
@@ -142,8 +144,7 @@ See also: #456, #789
 
 > 译者注：这种方式有个显而易见的好处是，当你的 merge request 只有一个 commit 的时候，commit message 中的标题和正文会被自动解析为 merge request 的标题和描述
 > 例子：
-> ![我的commit](/img/git-commit-rule-1-1.png)
-> ![我的merge request](/img/git-commit-rule-1.png)
+> ![我的commit](/img/git-commit-rule-1-1.png) > ![我的merge request](/img/git-commit-rule-1.png)
 
 当然了，不可能每次 commit 都要求你写这么多，有的简单的写一行即可，比如：
 
@@ -340,3 +341,5 @@ Git 子命令非常多，命令行本身非常强大。当然 IDE 里集成的 G
 ## 阅读 Pro Git
 
 [这本书](https://git-scm.com/book/en/v2)可以在线免费阅读，也有中文版，好好利用它吧~
+
+<!-- more -->
